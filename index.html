@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Richard Dugbartey
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendation">Recommendation</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="flutie8211-sheep-10343830_1920.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Richard Dugbartey! <img src="flutie8211-sheep-10343830_1920.png" width="60px"/>
+          </h1>
+          <p>
+            I am keenly aspiring to become full stack developer in few months in both application and presentation layers.
+            I have applied myself assidiously to IBM provided educational materials on applications to reach my goal. 
+            My ultimate goal is to become a top notch full stack engineer. I have interest in working on Watson Assistant, NLU, Sentiment analyzer to name a few.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>
+        
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>Django</h6>
+          <p>4 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>React</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>CSS</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>Java</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Nutrition Chatbot</h3>
+            <ul>
+              <li>Developed a website integrated with nutrition chatbot for mobile health workers using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Retail Shop Sentiment Analyzer</h3>
+            <ul>
+              <li>Developed sentiment analyzer for a major retail outlet's online sale platform to gauge market sentiment on differentiated 
+                 products using IBM NLU</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Keep Fit Scheduler Website</h3>
+            <ul>
+              <li>Created a multi-purpose keep fit scheduler website for a community to avoid overcrowding and ensure efficient use of the center's human and material resources</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Jane is able to quickly grasp all the key concepts in front-end development. 
+          Her attitude and contribution towards team work is excellent. 
+          She focuses on the critical areas of study and always ask relevant questions. 
+          She exhibits good initiative in project assignments and has potential to grow in the profession rapidly.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Jane as a co-worker has been a great experience. 
+          She works assidiously and always exceeds the required targets. 
+          I will always engage her in future projects given her work ethics and expertise.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I was fortunate to have Jane worked with me on the final phase of the company's Website development. 
+          Her valuable contribution and knowledge about the domain is exceptionally good. 
+          She will be a great asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Jane is a skilful worker and it's always great to work with her especially in front-end development"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation(showPopup(true))">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
